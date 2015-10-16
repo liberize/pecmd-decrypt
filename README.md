@@ -21,11 +21,11 @@ pecmd 执行每一行的时候会将其转为 unicode 编码，会调用 `MultiB
 
 ## 步骤
 
-本人比较懒，所以直接发布简陋的命令行工具，没有做成 GUI 工具。*以下步骤在 PE 下进行*。
+本人比较懒，所以直接发布简陋的命令行工具，没有做成 GUI 工具。**以下步骤在 PE 下进行**。
 
 1. 先得到加密的 pecmd.ini，如果内置于 pecmd.exe，请用 res hacker 提取；
-2. 下载下面提供的 pecmd.exe，32/64 位其实无所谓，只要 PE 能运行就可以，也可以用你自己的，见上面的说明；
-3. 下载附件，使用与 pecmd.exe 对应的版本，比如 pecmd.exe 是 64 位的就使用 x64 文件夹中的版本；
+2. 得到一个不会执行内置脚本的 pecmd.exe，32/64 位其实无所谓，只要 PE 能运行就可以；
+3. 下载 [pecmd-decrypt](https://github.com/liberize/pecmd-decrypt/releases)，使用与 pecmd.exe 对应的版本，比如 pecmd.exe 是 64 位的就使用 x64 文件夹中的版本；
 4. 将 1、2 里面的 pecmd.exe 和 pecmd.ini 放在这个目录下；
 5. 打开终端，运行 `DetourHook.exe "pecmd.exe pecmd.ini" DetourHookDll.dll`；
 6. 在当前目录生成 original.ini，便是解密后的 pecmd.ini。
