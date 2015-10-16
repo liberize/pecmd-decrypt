@@ -1,0 +1,56 @@
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION VER_Major, VER_Minor, VER_Release, VER_Build
+PRODUCTVERSION VER_Major, VER_Minor, VER_Release, VER_Build
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_UNKNOWN
+FILESUBTYPE VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004B0"
+        BEGIN
+            VALUE "FileVersion", STR_VersionStamp
+            VALUE "FileDescription", STR_AppDesc
+            VALUE "ProductName", STR_AppName
+            VALUE "ProductVersion", STR_Version
+            VALUE "CompanyName", STR_Company
+            VALUE "LegalCopyright", STR_Copyright
+            VALUE "Comments", STR_Comments
+            VALUE "OriginalFilename", STR_FileName
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0400, 0x04B0
+    END
+END
+
+#ifdef STR_Architecture
+1 24
+BEGIN
+    "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n"
+    "<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n"
+    "<assemblyIdentity\r\n"
+    "    name='Microsoft.Windows.Shell." STR_AppName "'\r\n"
+    "    processorArchitecture='" STR_Architecture "'\r\n"
+    "    version='1.0.0.0'\r\n"
+    "    type='win32'/>\r\n"
+    "<description>" STR_AppDesc "</description>\r\n"
+    "<dependency>\r\n"
+    "    <dependentAssembly>\r\n"
+    "        <assemblyIdentity\r\n"
+    "            type='win32'\r\n"
+    "            name='Microsoft.Windows.Common-Controls'\r\n"
+    "            version='6.0.0.0'\r\n"
+    "            processorArchitecture='" STR_Architecture "'\r\n"
+    "            publicKeyToken='6595b64144ccf1df'\r\n"
+    "            language='*'\r\n"
+    "        />\r\n"
+    "    </dependentAssembly>\r\n"
+    "</dependency>\r\n"
+   "</assembly>\r\n"
+END
+#endif

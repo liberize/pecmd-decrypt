@@ -1,0 +1,204 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "Define.h"
+#include <WinRes.h>
+
+#ifndef APSTUDIO_INVOKED
+#define AFX_RESOURCE_DLL
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""Define.h""\r\n"
+    "#include <WinRes.h>\r\n"
+    "\r\n"
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#define AFX_RESOURCE_DLL\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""Resource\\\\VER.rc2""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Main                ICON                    "Resource\\Main.ico"
+IDI_ICON1               ICON                    "Resource\\TRAY.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_Help                RCDATA                  "Resource\\Help.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Help DIALOGEX 0, 0, 448, 305
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOIDLEMSG | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "PECMD"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    ICON            IDI_Main,IDC_STATIC,3,3,20,20
+    LTEXT           "PECMD - WinPE Commander (Modified By Lxl1638)",IDC_AppDesc,28,3,207,8
+    LTEXT           "Copyleft(L) 2006-2007 Yonsm.NET,All rights reserved.",IDC_STATIC,28,15,237,8
+    LTEXT           "Version: %s",IDC_Version,337,3,110,8
+    LTEXT           "Build: 2007-08-28 14:18:23",IDC_Build,337,15,110,8
+    EDITTEXT        IDC_Help,0,30,447,274,ES_MULTILINE | ES_READONLY | WS_VSCROLL | WS_GROUP,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_Help, DIALOG
+    BEGIN
+        RIGHTMARGIN, 447
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "PECMD_TrayPopupMenu"
+    BEGIN
+        MENUITEM "PECMD帮助说明(&A)...,PECMD.EXE HELP", 21121
+        MENUITEM SEPARATOR
+        MENUITEM "分辨率1024X768 颜色32位 刷新率85,PECMD.EXE DISP W1024H768B32F85", 21122
+        MENUITEM "分辨率1024X768 颜色32位 刷新率90,PECMD.EXE DISP W1024H768B32F90", 21123
+        MENUITEM "分辨率1024X768 颜色16位 刷新率85,PECMD.EXE DISP W1024H768B16F85", 21124
+        MENUITEM "分辨率1024X768 颜色16位 刷新率90,PECMD.EXE DISP W1024H768B16F90", 21125
+        MENUITEM SEPARATOR
+        MENUITEM "分辨率1280X1024 颜色32位 刷新率85,PECMD.EXE DISP W1280H1024B32F85", 21126
+        MENUITEM "分辨率1280X1024 颜色32位 刷新率90,PECMD.EXE DISP W1280H1024B32F90", 21127
+        MENUITEM "分辨率1280X1024 颜色16位 刷新率85,PECMD.EXE DISP W1280H1024B16F85", 21128
+        MENUITEM "分辨率1280X1024 颜色16位 刷新率90,PECMD.EXE DISP W1280H1024B16F90", 21129
+        MENUITEM SEPARATOR
+        MENUITEM "分辨率800X600 颜色32位 刷新率85,PECMD.EXE DISP W800H600B32F85", 21130
+        MENUITEM "分辨率800X600 颜色32位 刷新率75,PECMD.EXE DISP W800H600B32F75", 21131
+        MENUITEM "分辨率800X600 颜色16位 刷新率85,PECMD.EXE DISP W800H600B16F85", 21132
+        MENUITEM "分辨率800X600 颜色16位 刷新率75        Ctrl+Alt+A,PECMD.EXE DISP W800H600B16F75", 21133
+        MENUITEM SEPARATOR
+        MENUITEM "弹出所有的UBS磁盘(&U),PECMD.EXE EJEC U-", 21134
+        MENUITEM "弹出光驱中的光碟(&C),PECMD.EXE EJEC C-", 21135
+        MENUITEM SEPARATOR
+        MENUITEM "清理临时文件夹的文件(&D)...,PECMD.EXE TEMP DELETE", 21136
+        MENUITEM "重新设置临时文件目录(&S)...,PECMD.EXE TEMP SETTING", 21137
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏/显示托盘图标(&H)      Ctrl+Alt+M", 21138
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CmdErr              "执行错误："
+    IDS_FoundDevice         "\r\n找到设备: %s"
+    IDS_FoundDriver         "\r\n找到驱动: %s, INF 文件: %s"
+    IDS_LogoErr             "可能因内存不足，加载 LOGO 出现错误，是否重新启动？\r\n选择[是]则重启，[否]则关机。"
+    IDS_LogoErrTip          "发生错误！"
+    IDS_PECNMD_Mgr          "Type TrayIcon MenuTip in here."
+    IDS_BrowseTitle         "请选择目标目录或文件。"
+    IDS_RETRY_EJECT         "无法弹出驱动器，是否重试？"
+    IDS_EJECT_ERR           "弹出失败！"
+    IDS_ReadEnviFail        "读取环境变量失败。"
+    IDS_Error               "错误！"
+    IDS_TempFolder          "临时文件夹位于 %s 目录，\r\n"
+    IDS_ClearTemp           "现在是否要清理临时文件夹？"
+    IDS_ClearTempFolder     "清理临时文件夹。"
+    IDS_ReSetTempFolder     "是否重新设置临时文件夹的位置？"
+    IDS_SetTempFolder       "设置临时文件夹。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NewTempFolder       "选择新的临时文件夹。"
+    IDS_PassWordErrorMsg    "你%d次输入的密码错误，是否重新启动？\r\n选择[是]则重启，[否]则关机。"
+    IDS_PassWordError       "密码错误！"
+    IDS_OK_Text             "确定"
+    IDS_InputPassWord       "输入密码，你共有"
+    IDS_PassWordErr         "密码错误，你还有"
+    IDS_OpporText           "次机会。"
+    IDS_SaveToClipboard     "结果已保存到粘帖板。"
+    IDS_MD5String           "字符串MD5："
+    IDS_SupperWord          "760de63d88f85cf967226671e4cb04bf"
+    IDS_Hotk                "Ctrl + Alt + #0x41,PECMD.EXE DISP W800H600B16F75"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "Resource\\VER.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
